@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap');
 
-
-
-
 *{
 	margin:0;
 	padding:0;
@@ -16,9 +13,10 @@
 	justify-content: flex-start;
 	align-items: center;
 	position: absolute; 
-	padding-left: 2%;
+	padding: 10px 2%;
 	font-size: large;
 	text-decoration: none;
+	background-color: #D4C5E2;
 
 }
 
@@ -32,9 +30,13 @@
 }
 
 .navBar .navItems li a {
-	color: #ef97b2;
+	color: #6735AF;
+	transition: color 0.5s ease-in-out;
 }
 
+.navBar .navItems li a:hover {
+	color: white;
+}
 
 body{
 	background: beige;	
@@ -42,4 +44,8 @@ body{
 	font-size:12px;
 	color: #333;
     font-family: 'Itim', cursive;
+}
+
+.logo {
+	padding-top: 10px;
 }

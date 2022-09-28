@@ -1,0 +1,61 @@
+.pageContent {
+    padding-left: 10px;
+    position: relative;
+    top: 90px;
+}
+
+.btn {
+    padding: 10px 10px;
+    background-color: #6735AF;
+    text-align: center;
+    width: 30%;
+    margin: 10px;
+    border: #E302FD solid 3px;
+    border-radius: 10px;
+    transition: border 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #843DD4;
+    border: black solid 3px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-family: exo-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    transition: color 0.5s ease-in-out;
+}
+
+.btn a:hover {
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wiserLogo img {
+    padding-left: 23%;
+}
+
+#pageTitle {
+    font-family: ff-cocon-pro, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
+    color: #6735AF;
+}
+
+#userSelections {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
