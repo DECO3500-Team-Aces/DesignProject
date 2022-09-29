@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiser | Homepage</title>
+    <title>Wiser | Your Library</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="library.css">
 
     <!--Font Links-->
     <!--Google Fonts-->
@@ -50,24 +50,27 @@
     </div>
 
     <div class="main">
-        <!-- Kyle's code here :) -->
-        <div id="wiserLogo" class="pageContent">
-            <img src="wiserBrand/logoSlogan_landscape.png" width=50% height="100%" alt="Wiser Logo with Slogan" />
-        </div>
-
         <div id="pageTitle" class="pageContent">
-            <h1>Welcome back Mx Smith!</h1>
+            <h1>Your Library</h1>
         </div>
+        <div id="libraryContents" class="pageContent">
+            <a href="index.html" class="clickable">
+                <div class="libraryItem">
+                    <p>THE VERY HUNGRY CATERPILLAR</p>
+                </div>
+            </a>
 
-        <div id="userSelections" class="pageContent">
-            <a href="whiteboard.html" class="btn">NEW STORY</a>
-            <a href="library.html" class="btn">LIBRARY</a>
+            <a href="whiteboard.html" class="clickable">
+                <div class="libraryItem" id="newItem">
+                    <p>ADD NEW</p>
+                </div>
+            </a>
         </div>
 
 
     </div>
+    <script src="js/script.js"></script>
 
-    <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
