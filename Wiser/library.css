@@ -1,0 +1,45 @@
+.main {
+    position: relative;
+    top: 80px;
+    padding-left: 10px;
+}
+
+.libraryItem {
+    background-color: crimson;
+    width: 150px;
+    height: 250px;
+    display: flex;
+    align-content: center;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.libraryItem:hover {
+    width: 200px;
+    height: 300px;
+}
+
+.clickable {
+    text-decoration: none;
+    color: white;
+    font-family: exo-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1em;
+    margin: 5px;
+}
+
+#libraryContents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#newItem {
+    background-color: beige;
+    border: crimson 3px dashed;
+    border-radius: 10px;
+    color: black;
+}

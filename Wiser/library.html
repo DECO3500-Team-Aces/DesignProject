@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiser | Your Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="library.css">
+
+    <!--Font Links-->
+    <!--Google Fonts-->
+    <!--Itim-->
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap" rel="stylesheet">
+    <!--Roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <!--Adobe Fonts-->
+    <!--Cocon and ExoSoft-->
+    <link rel="stylesheet" href="https://use.typekit.net/lvg5zzd.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>
+
+    <link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
+
+</head>
+
+<body>
+
+    <!--Navigation Menu Overlay and Items-->
+    <div class="overlay" id="navOverlay">
+
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <div class="navItems">
+            <a href="index.html">Story Book</a>
+            <a href="whiteboard.html">White Board</a>
+            <a href="library.html">Library</a>
+            <a href="">References</a>
+        </div>
+    </div>
+
+    <!-- Top Menu Bar -->
+    <div class="navBar">
+        <div class="logo">
+            <a href="main.html"><img src="wiserBrand/logo_text.png" width="200px" height="35px" alt="Wiser Logo" /></a>
+        </div>
+
+        <a href="javascript:void(0)" id="menuIcon" onclick="openNav()">&#9776;</a>
+    </div>
+
+    <div class="main">
+        <div id="pageTitle" class="pageContent">
+            <h1>Your Library</h1>
+        </div>
+        <div id="libraryContents" class="pageContent">
+            <a href="index.html" class="clickable">
+                <div class="libraryItem">
+                    <p>THE VERY HUNGRY CATERPILLAR</p>
+                </div>
+            </a>
+
+            <a href="whiteboard.html" class="clickable">
+                <div class="libraryItem" id="newItem">
+                    <p>ADD NEW</p>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
