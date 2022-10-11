@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Own Story</title>
+    <link rel="stylesheet" href="upload.css">
+    <script src="upload.js"></script>
+</head>
+<body>
+    <!--Navigation Menu Overlay and Items-->
+	<div class="overlay" id="navOverlay">
+
+		<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+		<div class="navItems">
+			<a href="index.html">Story Book</a>
+			<a href="whiteboard.html">White Board</a>
+			<a href="library.html">Library</a>
+			<a href="">References</a>
+		</div>
+	</div>
+
+	<!-- Top Menu Bar -->
+	<div class="navBar">
+		<div class="logo">
+			<a href="main.html"><img src="wiserBrand/logo_text.png" width="200px" height="35px" alt="Wiser Logo" /></a>
+		</div>
+
+		<a href="javascript:void(0)" id="menuIcon" onclick="openNav()">&#9776;</a>
+	</div>
+
+	<br><br><br><br><br>
+    <!--upload images part over here-->
+    <div id="upload_images">
+        <a href="index.html">Back To Story Book</a><br>
+        <a href="whiteboard.html">Go To White Board</a><br>
+        <input type="file" name="file" onchange="showImg(this)" />
+        <div class="image-and-text">
+            <img id="showimg" src=""  />
+            <p>In the light of the moon a little egg lay on a leaf.</p>
+        </div>
+
+        <input type="file" name="file" onchange="showImg1(this)" />
+        <div class="image-and-text">
+            <img id="showimg1" src=""  />
+            <p>One Sunday morning the warm sun came up and pop! Out of the egg came a tiny and very hungry caterpillar.</p>
+        </div>
+
+        <input type="file" name="file" onchange="showImg2(this)" />
+        <div class="image-and-text">
+            <img id="showimg2" src=""  />
+            <p>He started to look for some food.</p>
+        </div>
+    </div>
+</body>
+</html>
