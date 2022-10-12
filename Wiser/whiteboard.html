@@ -2,114 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiser Whiteboard</title>
-	<script src="script2.js" defer></script>
-	<link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiser Whiteboard</title>
+  <script src="script2.js" defer></script>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--Font Links-->
-    <!--Google Fonts-->
-    <!--Pangolin--><link href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap" rel="stylesheet">
-    <!--Roboto--><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
-    <!--Adobe Fonts-->
-    <!--Cocon and ExoSoft--><link rel="stylesheet" href="https://use.typekit.net/lvg5zzd.css">
-    
+  <!--Font Links-->
+  <!--Google Fonts-->
+  <!--Pangolin-->
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap" rel="stylesheet">
+  <!--Roboto-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  <!--Adobe Fonts-->
+  <!--Cocon and ExoSoft-->
+  <link rel="stylesheet" href="https://use.typekit.net/lvg5zzd.css">
+
 </head>
 
 <body>
-    <div class="main">
+  <div class="main">
 
-        <!--Navigation Menu Overlay and Items-->
-        <div class="overlay" id="navOverlay">
+    <!--Navigation Menu Overlay and Items-->
+    <div class="overlay" id="navOverlay">
 
-            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-            <div class="navItems">
-                <a href="index.html">Story Book</a>
-                <a href="whiteboard.html">White Board</a>
-                <a href="library.html">Library</a>
-                <a href="teacherView.html">Create New Story</a>
-                <a href="">References</a>
-            </div>
-        </div>
-
-        <!-- Top Menu Bar -->
-        <div class="navBar">
-            <div class="logo">
-                <a href="main.html"><img src="wiserBrand/logo_text.png" width="200px" height="35px"
-                        alt="Wiser Logo" /></a>
-            </div>
-
-            <a href="javascript:void(0)" id="menuIcon" onclick="openNav()">&#9776;</a>
-        </div>
-
-    </div>
-	
-	
-	<div class="container">
-      <section class="tools-board">
-        <div class="row">
-          <label class="title">Shapes</label>
-          <ul class="options">
-            <li class="option tool" id="rectangle">
-              <img src="icons/rectangle.svg" alt="">
-              <span>Rectangle</span>
-            </li>
-            <li class="option tool" id="circle">
-              <img src="icons/circle.svg" alt="">
-              <span>Circle</span>
-            </li>
-            <li class="option tool" id="triangle">
-              <img src="icons/triangle.svg" alt="">
-              <span>Triangle</span>
-            </li>
-            <li class="option">
-              <input type="checkbox" id="fill-color">
-              <label for="fill-color">Fill color</label>
-            </li>
-          </ul>
-        </div>
-        <div class="row">
-          <label class="title">Options</label>
-          <ul class="options">
-            <li class="option active tool" id="brush">
-              <img src="icons/brush.svg" alt="">
-              <span>Brush</span>
-            </li>
-            <li class="option tool" id="eraser">
-              <img src="icons/eraser.svg" alt="">
-              <span>Eraser</span>
-            </li>
-            <li class="option">
-              <input type="range" id="size-slider" min="1" max="30" value="5">
-            </li>
-          </ul>
-        </div>
-        <div class="row colors">
-          <label class="title">Colors</label>
-          <ul class="options">
-            <li class="option"></li>
-            <li class="option selected"></li>
-            <li class="option"></li>
-            <li class="option"></li>
-            <li class="option">
-              <input type="color" id="color-picker" value="#4A98F7">
-            </li>
-          </ul>
-        </div>
-        <div class="row buttons">
-          <button class="clear-canvas">Clear Whiteboard</button>
-          <button class="save-img">Save As Image</button>
-        </div>
-      </section>
-      <section class="drawing-board">
-        <canvas></canvas>
-      </section>
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+      <div class="navItems">
+        <a href="index.html">Log Out</a>
+      </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- Top Menu Bar -->
+    <div class="navBar">
+      <div class="logo">
+        <img src="wiserBrand/logo_text.png" width="200px" height="35px" alt="Wiser Logo" />
+      </div>
+
+      <a href="javascript:void(0)" id="menuIcon" onclick="openNav()">&#9776;</a>
+    </div>
+
+  </div>
+
+
+  <div class="container">
+    <section class="tools-board">
+      <div class="row">
+        <label class="title">Shapes</label>
+        <ul class="options">
+          <li class="option tool" id="rectangle">
+            <img src="icons/rectangle.svg" alt="">
+            <span>Rectangle</span>
+          </li>
+          <li class="option tool" id="circle">
+            <img src="icons/circle.svg" alt="">
+            <span>Circle</span>
+          </li>
+          <li class="option tool" id="triangle">
+            <img src="icons/triangle.svg" alt="">
+            <span>Triangle</span>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="fill-color">
+            <label for="fill-color">Fill color</label>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <label class="title">Options</label>
+        <ul class="options">
+          <li class="option active tool" id="brush">
+            <img src="icons/brush.svg" alt="">
+            <span>Brush</span>
+          </li>
+          <li class="option tool" id="eraser">
+            <img src="icons/eraser.svg" alt="">
+            <span>Eraser</span>
+          </li>
+          <li class="option">
+            <input type="range" id="size-slider" min="1" max="30" value="5">
+          </li>
+        </ul>
+      </div>
+      <div class="row colors">
+        <label class="title">Colors</label>
+        <ul class="options">
+          <li class="option"></li>
+          <li class="option selected"></li>
+          <li class="option"></li>
+          <li class="option"></li>
+          <li class="option">
+            <input type="color" id="color-picker" value="#4A98F7">
+          </li>
+        </ul>
+      </div>
+      <div class="row buttons">
+        <button class="clear-canvas">Clear Whiteboard</button>
+        <button class="save-img">Save</button>
+      </div>
+    </section>
+    <section class="drawing-board">
+      <canvas></canvas>
+    </section>
+  </div>
+
+  <div id="bookPages" class="pageContent">
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 1</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 2</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 3</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 4</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 5</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 6</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="allocatedPage">
+        <p>PAGE 7</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 8</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page">
+        <p>PAGE 9</p>
+      </div>
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/student.js"></script>
 
 </body>
 

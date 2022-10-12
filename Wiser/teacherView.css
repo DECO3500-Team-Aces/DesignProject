@@ -43,3 +43,7 @@
     justify-content: flex-start;
 }
 
+#page1 {
+    background: url('storyPages/page1.jpg');
+    background-size: 100% 100%;
+}

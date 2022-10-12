@@ -45,4 +45,6 @@
     flex-direction: column;
 }
 
-
+#pageTitle {
+    text-align: center;
+}
