@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wiser Whiteboard</title>
+  <title>Wiser | Page Creator</title>
   <script src="script2.js" defer></script>
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -46,7 +46,7 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="whiteboard">
     <section class="tools-board">
       <div class="row">
         <label class="title">Shapes</label>
@@ -98,7 +98,7 @@
         </ul>
       </div>
       <div class="row buttons">
-        <button class="clear-canvas">Clear Whiteboard</button>
+        <button class="clear-canvas">Clear Page</button>
         <button class="save-img">Save</button>
       </div>
     </section>
@@ -107,39 +107,44 @@
     </section>
   </div>
 
+  <div id="sideBar">
+    <p>PARTICIPANTS: 9</p>
+    <a href="javascript:void(0)" id="viewPagesBtn" class="clickable btn disabled" onclick="toggleWhiteboard()">TOGGLE PAGE VIEW</a>   
+  </div>
+
   <div id="bookPages" class="pageContent">
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page1">
         <p>PAGE 1</p>
       </div>
     </a>
 
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page2">
         <p>PAGE 2</p>
       </div>
     </a>
 
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page3">
         <p>PAGE 3</p>
       </div>
     </a>
 
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page4">
         <p>PAGE 4</p>
       </div>
     </a>
 
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page5">
         <p>PAGE 5</p>
       </div>
     </a>
 
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page6">
         <p>PAGE 6</p>
       </div>
     </a>
@@ -151,13 +156,13 @@
     </a>
 
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page8">
         <p>PAGE 8</p>
       </div>
     </a>
 
     <a href="#" class="clickable">
-      <div class="page">
+      <div class="page" id="page9">
         <p>PAGE 9</p>
       </div>
     </a>

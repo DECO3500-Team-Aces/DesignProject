@@ -8,7 +8,6 @@ clearCanvas = document.querySelector(".clear-canvas"),
 saveImg = document.querySelector(".save-img"),
 ctx = canvas.getContext("2d");
 
-var bgUrl;
 
 // global variables with default value
 let prevMouseX, prevMouseY, snapshot,
@@ -130,8 +129,23 @@ saveImg.addEventListener("click", () => {
     bgUrl = canvas.toDataURL('image/jpeg');
     document.getElementById("allocatedPage").style.background = 'url(' + url + ')';
     document.getElementById("allocatedPage").style.backgroundSize = '100% 100%';
+    document.getElementById("viewPagesBtn").classList.remove("disabled");
 });
 
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", () => isDrawing = false);
+
+window.onload = function() {
+    let userInput = prompt("Please enter you class linking code:");
+
+    if (userInput==null || userInput=="") {
+        alert("Error, no code entered!");
+        window.location.reload();
+    } else {
+        alert("Welcome student! You have been allocated page 7.")
+    }
+
+    ctx.font = "30px exo-soft";
+    ctx.fillText("On Wednesday, he ate through three plums.", 100, 400);
+}

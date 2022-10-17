@@ -5,8 +5,7 @@
 }
 
 .page {
-    /*background-image: url("storyPages/page1.jpg");*/
-    background-color: white;
+    /*background-color: white;*/
     border: crimson 3px dashed;
     border-radius: 10px;
     color: black;
@@ -35,8 +34,35 @@
     margin: 5px;
 }
 
+.btn {
+    padding: 10px 10px;
+    background-color: #6735AF;
+    text-align: center;
+    width: 70%;
+    margin: 10px;
+    border: #E302FD solid 3px;
+    border-radius: 10px;
+  
+    text-decoration: none;
+    color: white;
+    font-family: exo-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #9e6dd5;
+    border: black solid 3px;
+    color: black;
+  }
+
+  .hidden {
+    display: none !important;
+  } 
+
 #bookPages {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,3 +73,87 @@
     background: url('storyPages/page1.jpg');
     background-size: 100% 100%;
 }
+#page2 {
+  background: url('storyPages/page2.png');
+  background-size: 100% 100%;
+}
+#page3 {
+  background: url('storyPages/page3.png');
+  background-size: 100% 100%;
+}
+#page4 {
+  background: url('storyPages/page4.png');
+  background-size: 100% 100%;
+}
+#page5 {
+  background: url('storyPages/page5.png');
+  background-size: 100% 100%;
+}
+#page6 {
+  background: url('storyPages/page6.png');
+  background-size: 100% 100%;
+}
+#page7 {
+  background: url('storyPages/page7.png');
+  background-size: 100% 100%;
+}
+#page8 {
+  background: url('storyPages/page8.png');
+  background-size: 100% 100%;
+}
+#page9 {
+  background: url('storyPages/page9.png');
+  background-size: 100% 100%;
+}
+
+#sideBar {
+    position: fixed;
+    right: 0px;
+    top: 100px;
+    width: 150px;
+    height: 50%;
+    background-color: #843DD4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #sideBar p {
+    color: white;
+    padding-top: 5px;
+    font-family: exo-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+  }
+
+  #allocationPopup {
+    background-color: #6735AF;
+    border: white 3px solid;
+    border-radius: 10px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  #allocationPopup h3 {
+    color: white;
+    font-family: exo-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+  }
+
+  #allocationPopup label {
+    color: white;
+    font-family: exo-soft, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 5px;
+  }
