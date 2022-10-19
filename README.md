@@ -6,7 +6,7 @@ This repository contains both our medium-fidelity conceptual prototype and high-
 To do so, head to the repository homepage (https://github.com/DECO3500-Team-Aces/DesignProject) and find the green "Code" button to the top right of the file directory view. Click it to find the HTTPS and SSH links for you to clone via Git or select "Download ZIP" to get a compressed version downloaded to your machine. 
 
 The repository contains two prototypes, a conceptual (or simulated) prototype and a functional prototype. 
-The Simulated prototype was created using Adobe XD, and as such you will need Adobe XD installed on your machine in order to view the file. You can - however - also use free online tools (such as http://www.photopea.com/) to view the XD file.
+The Simulated prototype was created using Adobe XD, and as such you will need Adobe XD installed on your machine in order to view the file. You can - however - also use free online tools (such as http://www.photopea.com/) to view the XD file. This link is showing high-fidelity of prototype made by Adobe XD (https://xd.adobe.com/view/9eb4e909-9ec3-49f7-99f9-1f08965ea4e8-cbe7/?fullscreen).
 
 The functional prototype was created using web languages (HTML, CSS and JS mainly). To view it, simply navigate to the 'Wiser' directory and open the index.html file. This should automatically open using your default web browser, however if it does not, right cick the file, go to "Open With..." and select your preferred web browser. 
 
