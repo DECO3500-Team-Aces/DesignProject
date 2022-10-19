@@ -20,7 +20,7 @@ body2{
   max-width: 1050px;
   margin: 0;
   position: absolute;
-  top: 53.5%;
+  top: 395px;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%)
@@ -141,6 +141,13 @@ section{
   background: #4A98F7;
   border: 1px solid #4A98F7;
 }
+
+.buttons .viewPagesBtn{
+  background: #4A98F7;
+  border: 1px solid #4A98F7;
+  margin-bottom: 0px;
+}
+
 .drawing-board{
   flex: 1;
   overflow: hidden;
@@ -148,4 +155,136 @@ section{
 .drawing-board canvas{
   width: 120%;
   height: 120%;
+}
+
+.hidden {
+  display: none;
+}
+
+.page {
+  /*background-color: rgb(145, 145, 145);*/
+  border: crimson 5px solid;
+  border-radius: 10px;
+  color: black;
+  width: 150px;
+  height: 250px;
+  display: flex;
+  align-content: center;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page:hover {
+  width: 200px;
+}
+
+.clickable {
+  text-decoration: none;
+  color: white;
+  font-family: exo-soft, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1em;
+  margin: 5px;
+}
+
+.btn {
+  padding: 10px 10px;
+  background-color: #6735AF;
+  text-align: center;
+  width: 80%;
+  margin: 10px;
+  border: #E302FD solid 3px;
+  border-radius: 10px;
+
+  text-decoration: none;
+  color: white;
+  font-family: exo-soft, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #9e6dd5;
+  border: black solid 3px;
+  color: black;
+}
+
+.disabled {
+  display: none;
+}
+
+.hidden {
+  height: 0px;
+  transition: 0.5s;
+}
+
+#sideBar {
+  position: fixed;
+  right: 0px;
+  top: 100px;
+  width: 150px;
+  height: 50%;
+  background-color: #843DD4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#sideBar p {
+  color: white;
+  padding-top: 5px;
+  font-family: exo-soft, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#page1 {
+  background: url('storyPages/page1.jpg');
+  background-size: 100% 100%;
+}
+#page2 {
+background: url('storyPages/page2.png');
+background-size: 100% 100%;
+}
+#page3 {
+background: url('storyPages/page3.png');
+background-size: 100% 100%;
+}
+#page4 {
+background: url('storyPages/page4.png');
+background-size: 100% 100%;
+}
+#page5 {
+background: url('storyPages/page5.png');
+background-size: 100% 100%;
+}
+#page6 {
+background: url('storyPages/page6.png');
+background-size: 100% 100%;
+}
+#allocatedPage {
+  background-color: white;
+  border: green 3px dashed;
+}
+#page8 {
+background: url('storyPages/page8.png');
+background-size: 100% 100%;
+}
+#page9 {
+background: url('storyPages/page9.png');
+background-size: 100% 100%;
+}
+
+#bookPages {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 10px;
+  overflow: scroll;
 }

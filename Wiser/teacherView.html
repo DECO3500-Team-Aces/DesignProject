@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiser | Your Story - Teacher</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="teacherView.css">
+
+    <!--Font Links-->
+    <!--Google Fonts-->
+    <!--Itim-->
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap" rel="stylesheet">
+    <!--Roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <!--Adobe Fonts-->
+    <!--Cocon and ExoSoft-->
+    <link rel="stylesheet" href="https://use.typekit.net/lvg5zzd.css">
+
+</head>
+
+<body>
+
+    <!--Navigation Menu Overlay and Items-->
+    <div class="overlay" id="navOverlay">
+
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+        <div class="navItems">
+            <a href="index.html">Log Out</a>
+            <a href="library.html">Library</a>
+            <a href="teacherView.html">Create New Story</a>
+        </div>
+    </div>
+
+    <!-- Top Menu Bar -->
+    <div class="navBar">
+        <div class="logo">
+            <a href="main.html"><img src="wiserBrand/logo_text.png" width="200px" height="35px" alt="Wiser Logo" /></a>
+        </div>
+
+        <a href="javascript:void(0)" id="menuIcon" onclick="openNav()">&#9776;</a>
+    </div>
+
+    <div class="main">
+        <div id="pageTitle" class="pageContent">
+            <h1 id="titleElement"></h1>
+            <h3>Linking Code: TZK709</h3>
+        </div>
+        <div id="bookPages" class="pageContent">
+            <a href="#" class="clickable">
+                <div class="page" id="page1">
+                    <p>PAGE 1</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page2">
+                    <p>PAGE 2</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page3">
+                    <p>PAGE 3</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page4">
+                    <p>PAGE 4</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page5">
+                    <p>PAGE 5</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page6">
+                    <p>PAGE 6</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page7">
+                    <p>PAGE 7</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page8">
+                    <p>PAGE 8</p>
+                </div>
+            </a>
+
+            <a href="#" class="clickable">
+                <div class="page" id="page9">
+                    <p>PAGE 9</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="allocationPopup" class="hidden">
+        <h3>PARTICIPANT ALLOCATION</h3>
+        <label for="page1Selection">PAGE 1:</label>
+        <select id="page1Selection">
+            <option value="Student 1" selected>Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page2Selection">PAGE 2:</label>
+        <select id="page2Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2" selected>Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page3Selection">PAGE 3:</label>
+        <select id="page3Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3" selected>Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page4Selection">PAGE 4:</label>
+        <select id="page4Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4" selected>Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page5Selection">PAGE 5:</label>
+        <select id="page5Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5" selected>Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page6Selection">PAGE 6:</label>
+        <select id="page6Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6" selected>Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page7Selection">PAGE 7:</label>
+        <select id="page7Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7" selected>Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page8Selection">PAGE 8:</label>
+        <select id="page8Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8" selected>Student 8</option>
+            <option value="Student 9">Student 9</option>
+        </select>
+
+        <label for="page9Selection">PAGE 9:</label>
+        <select id="page9Selection">
+            <option value="Student 1">Student 1</option>
+            <option value="Student 2">Student 2</option>
+            <option value="Student 3">Student 3</option>
+            <option value="Student 4">Student 4</option>
+            <option value="Student 5">Student 5</option>
+            <option value="Student 6">Student 6</option>
+            <option value="Student 7">Student 7</option>
+            <option value="Student 8">Student 8</option>
+            <option value="Student 9" selected>Student 9</option>
+        </select>
+
+    </div>
+
+    <div id="sideBar">
+        <p>PARTICIPANTS: 9</p>
+        <a href="javascript:void(0)" id="viewPagesBtn" class="clickable btn" onclick="saveFinished()">SAVE AS FINISHED</a>
+        <a href="javascript:void(0)"  class="clickable btn" onclick="saveDraft()">SAVE AS DRAFT</a>
+        <a href="library.html"  class="clickable btn" onclick="">LOAD DRAFT</a>
+        <a href="javascript:void(0)"  class="clickable btn" onclick="toggleAllocation()">PARTICIPANT ALLOCATIONS</a>
+        <a href="javascript:void(0)"  class="clickable btn" onclick="smokeAndMirrors()">ADD PAGE</a>   
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/teacherView.js"></script>
+
+</body>
+
+</html>

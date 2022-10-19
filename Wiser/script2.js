@@ -8,6 +8,7 @@ clearCanvas = document.querySelector(".clear-canvas"),
 saveImg = document.querySelector(".save-img"),
 ctx = canvas.getContext("2d");
 
+
 // global variables with default value
 let prevMouseX, prevMouseY, snapshot,
 isDrawing = false,
@@ -119,12 +120,32 @@ clearCanvas.addEventListener("click", () => {
 });
 
 saveImg.addEventListener("click", () => {
-    const link = document.createElement("a"); // creating <a> element
-    link.download = `${Date.now()}.jpg`; // passing current date as link download value
-    link.href = canvas.toDataURL(); // passing canvasData as link href value
-    link.click(); // clicking link to download image
+    //const link = document.createElement("a"); // creating <a> element
+    //link.download = `${Date.now()}.jpg`; // passing current date as link download value
+    //link.href = canvas.toDataURL(); // passing canvasData as link href value
+    //link.click(); // clicking link to download image
+
+    var url = canvas.toDataURL('image/jpeg');
+    bgUrl = canvas.toDataURL('image/jpeg');
+    document.getElementById("allocatedPage").style.background = 'url(' + url + ')';
+    document.getElementById("allocatedPage").style.backgroundSize = '100% 100%';
+    document.getElementById("viewPagesBtn").classList.remove("disabled");
 });
 
 canvas.addEventListener("mousedown", startDraw);
 canvas.addEventListener("mousemove", drawing);
 canvas.addEventListener("mouseup", () => isDrawing = false);
+
+window.onload = function() {
+    let userInput = prompt("Please enter you class linking code:");
+
+    if (userInput==null || userInput=="") {
+        alert("Error, no code entered!");
+        window.location.reload();
+    } else {
+        alert("Welcome student! You have been allocated page 7.")
+    }
+
+    ctx.font = "30px exo-soft";
+    ctx.fillText("On Wednesday, he ate through three plums.", 100, 400);
+}

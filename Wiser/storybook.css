@@ -1,0 +1,8 @@
+.book_wrapper {
+    z-index: 0;
+}
+
+.audioLeft {
+    position: absolute;
+    right: 2px;
+}

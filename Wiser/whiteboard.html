@@ -2,114 +2,272 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiser Whiteboard</title>
-	<script src="script2.js" defer></script>
-	<link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiser | Page Creator</title>
+  <script src="script2.js" defer></script>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!--Font Links-->
-    <!--Google Fonts-->
-    <!--Pangolin--><link href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap" rel="stylesheet">
-    <!--Roboto--><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
-    <!--Adobe Fonts-->
-    <!--Cocon and ExoSoft--><link rel="stylesheet" href="https://use.typekit.net/lvg5zzd.css">
-    
+  <!--Font Links-->
+  <!--Google Fonts-->
+  <!--Pangolin-->
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Pangolin&display=swap" rel="stylesheet">
+  <!--Roboto-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  <!--Adobe Fonts-->
+  <!--Cocon and ExoSoft-->
+  <link rel="stylesheet" href="https://use.typekit.net/lvg5zzd.css">
+
+  <!-- For Recording -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="https://markjivko.com/dist/recorder.js"></script>
+
 </head>
 
 <body>
-    <div class="main">
+  <div class="main">
 
-        <!--Navigation Menu Overlay and Items-->
-        <div class="overlay" id="navOverlay">
+    <!--Navigation Menu Overlay and Items-->
+    <div class="overlay" id="navOverlay">
 
-            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-            <div class="navItems">
-                <a href="index.html">Story Book</a>
-                <a href="whiteboard.html">White Board</a>
-                <a href="library.html">Library</a>
-                <a href="">References</a>
-            </div>
-        </div>
-
-        <!-- Top Menu Bar -->
-        <div class="navBar">
-            <div class="logo">
-                <a href="main.html"><img src="wiserBrand/logo_text.png" width="200px" height="35px"
-                        alt="Wiser Logo" /></a>
-            </div>
-
-            <a href="javascript:void(0)" id="menuIcon" onclick="openNav()">&#9776;</a>
-        </div>
-
-    </div>
-	
-	
-	<div class="container">
-      <section class="tools-board">
-        <div class="row">
-          <label class="title">Shapes</label>
-          <ul class="options">
-            <li class="option tool" id="rectangle">
-              <img src="icons/rectangle.svg" alt="">
-              <span>Rectangle</span>
-            </li>
-            <li class="option tool" id="circle">
-              <img src="icons/circle.svg" alt="">
-              <span>Circle</span>
-            </li>
-            <li class="option tool" id="triangle">
-              <img src="icons/triangle.svg" alt="">
-              <span>Triangle</span>
-            </li>
-            <li class="option">
-              <input type="checkbox" id="fill-color">
-              <label for="fill-color">Fill color</label>
-            </li>
-          </ul>
-        </div>
-        <div class="row">
-          <label class="title">Options</label>
-          <ul class="options">
-            <li class="option active tool" id="brush">
-              <img src="icons/brush.svg" alt="">
-              <span>Brush</span>
-            </li>
-            <li class="option tool" id="eraser">
-              <img src="icons/eraser.svg" alt="">
-              <span>Eraser</span>
-            </li>
-            <li class="option">
-              <input type="range" id="size-slider" min="1" max="30" value="5">
-            </li>
-          </ul>
-        </div>
-        <div class="row colors">
-          <label class="title">Colors</label>
-          <ul class="options">
-            <li class="option"></li>
-            <li class="option selected"></li>
-            <li class="option"></li>
-            <li class="option"></li>
-            <li class="option">
-              <input type="color" id="color-picker" value="#4A98F7">
-            </li>
-          </ul>
-        </div>
-        <div class="row buttons">
-          <button class="clear-canvas">Clear Whiteboard</button>
-          <button class="save-img">Save As Image</button>
-        </div>
-      </section>
-      <section class="drawing-board">
-        <canvas></canvas>
-      </section>
+      <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+      <div class="navItems">
+        <a href="index.html">Log Out</a>
+      </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <!-- Top Menu Bar -->
+    <div class="navBar">
+      <div class="logo">
+        <img src="wiserBrand/logo_text.png" width="200px" height="35px" alt="Wiser Logo" />
+      </div>
+
+      <a href="javascript:void(0)" id="menuIcon" onclick="openNav()">&#9776;</a>
+    </div>
+
+  </div>
+
+
+  <div class="container" id="whiteboard">
+    <section class="tools-board">
+      <div class="row">
+        <label class="title">Shapes</label>
+        <ul class="options">
+          <li class="option tool" id="rectangle">
+            <img src="icons/rectangle.svg" alt="">
+            <span>Rectangle</span>
+          </li>
+          <li class="option tool" id="circle">
+            <img src="icons/circle.svg" alt="">
+            <span>Circle</span>
+          </li>
+          <li class="option tool" id="triangle">
+            <img src="icons/triangle.svg" alt="">
+            <span>Triangle</span>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="fill-color">
+            <label for="fill-color">Fill color</label>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <label class="title">Options</label>
+        <ul class="options">
+          <li class="option active tool" id="brush">
+            <img src="icons/brush.svg" alt="">
+            <span>Brush</span>
+          </li>
+          <li class="option tool" id="eraser">
+            <img src="icons/eraser.svg" alt="">
+            <span>Eraser</span>
+          </li>
+          <li class="option">
+            <input type="range" id="size-slider" min="1" max="30" value="5">
+          </li>
+        </ul>
+      </div>
+      <div class="row colors">
+        <label class="title">Colors</label>
+        <ul class="options">
+          <li class="option"></li>
+          <li class="option selected"></li>
+          <li class="option"></li>
+          <li class="option"></li>
+          <li class="option">
+            <input type="color" id="color-picker" value="#4A98F7">
+          </li>
+        </ul>
+      </div>
+      <div class="row buttons">
+        <button class="clear-canvas">Clear Page</button>
+        <button class="save-img">Save</button>
+      </div>
+    </section>
+    <section class="drawing-board">
+      <canvas></canvas>
+    </section>
+  </div>
+
+  <div id="sideBar">
+    <p>PARTICIPANTS: 9</p>
+    <a href="javascript:void(0)" id="viewPagesBtn" class="clickable btn disabled" onclick="toggleWhiteboard()">TOGGLE PAGE VIEW</a>   
+  </div>
+
+  <div id="bookPages" class="pageContent">
+    <a href="#" class="clickable">
+      <div class="page" id="page1">
+        <p>PAGE 1</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="page2">
+        <p>PAGE 2</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="page3">
+        <p>PAGE 3</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="page4">
+        <p>PAGE 4</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="page5">
+        <p>PAGE 5</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="page6">
+        <p>PAGE 6</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="allocatedPage">
+        <p>PAGE 7</p>
+      </div>
+      <div class="holder">
+        <div data-role="controls">
+            <button>Record</button>
+        </div>
+        <div data-role="recordings"></div>
+    </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="page8">
+        <p>PAGE 8</p>
+      </div>
+    </a>
+
+    <a href="#" class="clickable">
+      <div class="page" id="page9">
+        <p>PAGE 9</p>
+      </div>
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/student.js"></script>
 
 </body>
+<!-- For recording -->
+<script>
+  jQuery(document).ready(function () {
+      var $ = jQuery;
+      var myRecorder = {
+          objects: {
+              context: null,
+              stream: null,
+              recorder: null
+          },
+          init: function () {
+              if (null === myRecorder.objects.context) {
+                  myRecorder.objects.context = new (
+                          window.AudioContext || window.webkitAudioContext
+                          );
+              }
+          },
+          start: function () {
+              var options = {audio: true, video: false};
+              navigator.mediaDevices.getUserMedia(options).then(function (stream) {
+                  myRecorder.objects.stream = stream;
+                  myRecorder.objects.recorder = new Recorder(
+                          myRecorder.objects.context.createMediaStreamSource(stream),
+                          {numChannels: 1}
+                  );
+                  myRecorder.objects.recorder.record();
+              }).catch(function (err) {});
+          },
+          stop: function (listObject) {
+              if (null !== myRecorder.objects.stream) {
+                  myRecorder.objects.stream.getAudioTracks()[0].stop();
+              }
+              if (null !== myRecorder.objects.recorder) {
+                  myRecorder.objects.recorder.stop();
 
+                  // Validate object
+                  if (null !== listObject
+                          && 'object' === typeof listObject
+                          && listObject.length > 0) {
+                      // Export the WAV file
+                      myRecorder.objects.recorder.exportWAV(function (blob) {
+                          var url = (window.URL || window.webkitURL)
+                                  .createObjectURL(blob);
+
+                          // Prepare the playback
+                          var audioObject = $('<audio controls></audio>')
+                                  .attr('src', url);
+
+                          // Prepare the download link
+                          var downloadObject = $('<a>&#9660;</a>')
+                                  .attr('href', url)
+                                  .attr('download', new Date().toUTCString() + '.wav');
+
+                          // Wrap everything in a row
+                          var holderObject = $('<div class="row"></div>')
+                                  .append(audioObject)
+                                  .append(downloadObject);
+
+                          // Append to the list
+                          listObject.append(holderObject);
+                      });
+                  }
+              }
+          }
+      };
+
+      // Prepare the recordings list
+      var listObject = $('[data-role="recordings"]');
+
+      // Prepare the record button
+      $('[data-role="controls"] > button').click(function () {
+          // Initialize the recorder
+          myRecorder.init();
+
+          // Get the button state 
+          var buttonState = !!$(this).attr('data-recording');
+
+          // Toggle
+          if (!buttonState) {
+              $(this).attr('data-recording', 'true');
+              myRecorder.start();
+          } else {
+              $(this).attr('data-recording', '');
+              myRecorder.stop(listObject);
+          }
+      });
+  });
+</script>
 </html>
